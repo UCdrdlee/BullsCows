@@ -1,7 +1,7 @@
 bulls_and_cows <-function() {
   print("Test")
   num_guess <- 0
-
+  ###this is a comment 
   # This function returns four random digits to be guessed
   generate_computer_vector <-function() {
     return(c(sample(0:9,4)))
