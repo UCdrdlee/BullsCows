@@ -18,6 +18,11 @@ bulls_and_cows <-function() {
     return(numbers_string)
   }
 
+  validated <- function(user_input){
+    is_len_four <- (4 == length(user_input)) ## check if length is four
+    is_redundant <- (TRUE %in% duplicated(user_input)) ## return TRUE when there is a duplicated element
+  }
+  
   # This function has two sub-functions: number_bulls and number_cows that count the number of Bulls and Cows respectively.
   number_bulls_and_cows <-function(computer_choice,user_choice){
     # This function returns the number of bulls
